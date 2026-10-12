@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dein Rauhnächte Begleiter | Zeit des Wandels</title>
+    <title>Dein Rauhnächte Online-Kurs | Zeit des Wandels</title>
     <style>
-        /* Farbpalette & Basis-Styling */
         :root {
             --bg-dark: #0d1117;
             --bg-card: #161b22;
@@ -35,7 +34,6 @@
             padding: 20px;
         }
 
-        /* Hero-Bereich */
         header {
             text-align: center;
             padding: 80px 20px;
@@ -60,29 +58,24 @@
             font-style: italic;
         }
 
-        /* Call to Action Button */
-        .btn-cta {
-            display: inline-block;
-            background-color: var(--gold);
-            color: var(--bg-dark);
-            padding: 15px 35px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        /* Formular-Container-Styling */
+        .form-container {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 30px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .btn-cta:hover {
-            background-color: var(--gold-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        .form-container h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-weight: normal;
+            font-size: 1.2rem;
         }
 
-        /* Einleitung / Sehnsucht */
         .intro-section {
             text-align: center;
             padding: 60px 20px;
@@ -97,7 +90,6 @@
             font-weight: normal;
         }
 
-        /* Die Säulen des Produkts (Features) */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -137,7 +129,6 @@
             font-size: 0.95rem;
         }
 
-        /* Über Mich Sektion */
         .about-section {
             background-color: var(--bg-card);
             padding: 40px;
@@ -152,7 +143,6 @@
             font-weight: normal;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -161,7 +151,6 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Responsive Anpassungen */
         @media (max-width: 600px) {
             header h1 { font-size: 2.2rem; }
             header p { font-size: 1.1rem; }
@@ -175,9 +164,16 @@
     <header>
         <div class="container">
             <h1>Die Magie der Rauhnächte</h1>
-            <p>Nutze die Zeit zwischen den Jahren für intensives Loslassen, tiefe Reflexion und kraftvolles Manifestieren.</p>
-            <!-- Ersetzen Sie das '#' durch Ihren Digistore24/PayPal Link -->
-            <a href="#" class="btn-cta">Jetzt Begleiter sichern</a>
+            <p>Dein begleiteter Online-Kurs für intensives Loslassen, tiefe Reflexion und kraftvolles Manifestieren per E-Mail.</p>
+            
+            <!-- BREVO FORMULAR PLATZHALTER OBEN -->
+            <div class="form-container">
+                <h3>Sichere dir jetzt deinen Platz im Kurs:</h3>
+                
+                <!-- ERSETZE DEN FOLGENDEN IFRAME-CODE DURCH DEINEN ECHTEN BREVO-CODE -->
+                <iframe src="https://example.com" width="100%" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                
+            </div>
         </div>
     </header>
 
@@ -186,38 +182,44 @@
         <!-- INTRO SECTION -->
         <section class="intro-section">
             <h2>Tritt ein in die Zeit der Stille</h2>
-            <p>Die 12 heiligen Nächte zwischen Weihnachten und dem Dreikönigstag sind ein uraltes Tor für Transformation. Unser exklusiver Begleiter führt dich Tag für Tag durch diesen magischen Prozess, damit du gestärkt, klar und voller Visionen in das neue Jahr startest.</p>
+            <p>Die 12 heiligen Nächte zwischen Weihnachten und dem Dreikönigstag sind ein uraltes Tor für Transformation. Unser exklusiver Online-Kurs führt dich Tag für Tag per E-Mail durch diesen magischen Prozess, damit du gestärkt, klar und voller Visionen in das neue Jahr startest.</p>
         </section>
 
-        <!-- PRODUCT PILLARS (FEATURES) -->
+        <!-- PRODUCT PILLARS (ONLINE KURS FEATURES) -->
         <section class="features-grid">
             <div class="feature-card">
-                <span class="feature-icon">📓</span>
-                <h3>Das Journal & Workbook</h3>
-                <p>Tiefgehende, tägliche Reflexionsfragen für jede der 12 Nächte, um Altes liebevoll zu verabschieden.</p>
+                <span class="feature-icon">✨</span>
+                <h3>Tägliche Video- & Audioimpulse</h3>
+                <p>Jeden Morgen landet eine exklusive Nachricht in deinem Postfach. Mit geführten Meditationen und Impulsen, die dich durch den Tag tragen.</p>
             </div>
             <div class="feature-card">
                 <span class="feature-icon">🔮</span>
                 <h3>Kartenlegen & Rituale</h3>
-                <p>Schritt-für-Schritt-Anleitungen für deine tägliche Karten-Ziehung, Orakel-Impulse und schützende Räucherrituale.</p>
+                <p>Schritt-für-Schritt-Anleitungen für deine tägliche Karten-Ziehung, tiefe Orakel-Impulse und reinigende Räucherrituale für dein Zuhause.</p>
             </div>
             <div class="feature-card">
-                <span class="feature-icon">🧘‍♀️</span>
-                <h3>Erdung & Achtsamkeit</h3>
-                <p>Kleine, winterliche Yoga-Impulse und sanfte Meditationen, die deinen Körper und deine Seele perfekt harmonisieren.</p>
+                <span class="feature-icon">👥</span>
+                <h3>Intime Community</h3>
+                <p>Teile deine Erfahrungen, Träume und Erkenntnisse in einem geschützten, liebevollen Raum mit gleichgesinnten Seelen.</p>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
         <section class="about-section">
-            <h2>Das Gesicht hinter dem Produkt</h2>
-            <p>Schön, dass du hier bist! Ich begleite seit vielen Jahren Menschen dabei, ihre familiären Wurzeln zu klären, Körper und Geist durch Yoga zu verbinden und der eigenen Intuition wieder zu vertrauen. Mit diesem Rauhnächte-Begleiter habe ich all mein Herzblut und meine bewährtesten Werkzeuge gebündelt, um dich durch die magischste Zeit des Jahres zu führen.</p>
+            <h2>Deine Kursbegleitung</h2>
+            <p>Schön, dass du hier bist! Ich begleite seit vielen Jahren Menschen dabei, ihre familiären Wurzeln zu klären, Körper und Geist zu verbinden und der eigenen Intuition wieder zu vertrauen. In diesem Rauhnächte-Onlinekurs habe ich all mein Herzblut und meine bewährtesten Werkzeuge gebündelt, um dich persönlich durch die magischste Zeit des Jahres zu führen.</p>
         </section>
 
-        <!-- SECOND CTA FOR BETTER CONVERSION -->
+        <!-- SECOND CTA AT THE BOTTOM -->
         <section style="text-align: center; margin: 60px 0;">
-            <h2 style="color: var(--gold); font-weight: normal; margin-bottom: 20px;">Bereit für deine Transformation?</h2>
-            <a href="#" class="btn-cta">In die Magie eintauchen</a>
+            <h2 style="color: var(--gold); font-weight: normal; margin-bottom: 20px;">Bereit für deine Reise?</h2>
+            <div class="form-container">
+                <h3>Trage dich hier ein und sei dabei:</h3>
+                
+                <!-- ERSETZE DEN FOLGENDEN IFRAME-CODE EBENFALLS DURCH DEINEN ECHTEN BREVO-CODE -->
+                <iframe src="https://example.com" width="100%" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                
+            </div>
         </section>
 
     </div>
@@ -235,4 +237,3 @@
 
 </body>
 </html>
-

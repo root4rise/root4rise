@@ -1,10 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>My Test Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Rauhnächte Begleiter | Zeit des Wandels</title>
+    <style>
+        /* Farbpalette & Basis-Styling */
+        :root {
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --gold: #d4af37;
+            --gold-hover: #f3e5ab;
+            --text-light: #f0f6fc;
+            --text-muted: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero-Bereich */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 1)), 
+                        url('https://unsplash.com') no-repeat center center/cover;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            font-style: italic;
+        }
+
+        /* Call to Action Button */
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--gold);
+            color: var(--bg-dark);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Einleitung / Sehnsucht */
+        .intro-section {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .intro-section h2 {
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        /* Die Säulen des Produkts (Features) */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background-color: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .feature-card h3 {
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Über Mich Sektion */
+        .about-section {
+            background-color: var(--bg-card);
+            padding: 40px;
+            border-radius: 12px;
+            margin: 60px 0;
+            border-left: 4px solid var(--gold);
+        }
+
+        .about-section h2 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive Anpassungen */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1.1rem; }
+            .about-section { padding: 25px; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello GitHub Pages!</h1>
-    <p>This is my first landing page.</p>
+
+    <!-- HERO SECTION -->
+    <header>
+        <div class="container">
+            <h1>Die Magie der Rauhnächte</h1>
+            <p>Nutze die Zeit zwischen den Jahren für intensives Loslassen, tiefe Reflexion und kraftvolles Manifestieren.</p>
+            <!-- Ersetzen Sie das '#' durch Ihren Digistore24/PayPal Link -->
+            <a href="#" class="btn-cta">Jetzt Begleiter sichern</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- INTRO SECTION -->
+        <section class="intro-section">
+            <h2>Tritt ein in die Zeit der Stille</h2>
+            <p>Die 12 heiligen Nächte zwischen Weihnachten und dem Dreikönigstag sind ein uraltes Tor für Transformation. Unser exklusiver Begleiter führt dich Tag für Tag durch diesen magischen Prozess, damit du gestärkt, klar und voller Visionen in das neue Jahr startest.</p>
+        </section>
+
+        <!-- PRODUCT PILLARS (FEATURES) -->
+        <section class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">📓</span>
+                <h3>Das Journal & Workbook</h3>
+                <p>Tiefgehende, tägliche Reflexionsfragen für jede der 12 Nächte, um Altes liebevoll zu verabschieden.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🔮</span>
+                <h3>Kartenlegen & Rituale</h3>
+                <p>Schritt-für-Schritt-Anleitungen für deine tägliche Karten-Ziehung, Orakel-Impulse und schützende Räucherrituale.</p>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🧘‍♀️</span>
+                <h3>Erdung & Achtsamkeit</h3>
+                <p>Kleine, winterliche Yoga-Impulse und sanfte Meditationen, die deinen Körper und deine Seele perfekt harmonisieren.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section">
+            <h2>Das Gesicht hinter dem Produkt</h2>
+            <p>Schön, dass du hier bist! Ich begleite seit vielen Jahren Menschen dabei, ihre familiären Wurzeln zu klären, Körper und Geist durch Yoga zu verbinden und der eigenen Intuition wieder zu vertrauen. Mit diesem Rauhnächte-Begleiter habe ich all mein Herzblut und meine bewährtesten Werkzeuge gebündelt, um dich durch die magischste Zeit des Jahres zu führen.</p>
+        </section>
+
+        <!-- SECOND CTA FOR BETTER CONVERSION -->
+        <section style="text-align: center; margin: 60px 0;">
+            <h2 style="color: var(--gold); font-weight: normal; margin-bottom: 20px;">Bereit für deine Transformation?</h2>
+            <a href="#" class="btn-cta">In die Magie eintauchen</a>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Heritage for Growth. Alle Rechte vorbehalten.</p>
+            <p style="margin-top: 10px;">
+                <a href="#" style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Impressum</a> | 
+                <a href="#" style="color: var(--text-muted); margin: 0 10px; text-decoration: none;">Datenschutz</a>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
+
